@@ -30,6 +30,13 @@ cc_library {
         "lz4frame.c",
         "xxhash.c",
     ],
-    cflags: ["-Wall", "-Werror"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-O3",
+    ],
+    lto: {
+        thin: true,
+    },
     export_include_dirs: ["."],
 }
