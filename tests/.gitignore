@@ -10,10 +10,13 @@ fuzzer32
 fasttest
 roundTripTest
 checkTag
+checkFrame
+decompress-partial
 
 # test artefacts
 tmp*
 versionsTest
+lz4_all.c
 
 # local tests
 afl
